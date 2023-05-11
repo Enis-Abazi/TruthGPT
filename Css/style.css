@@ -1823,6 +1823,9 @@ footer .center-footer colored-span {
         padding: 20px 5px;
         column-gap: 5px;
     }
+    .truth .flex .col { 
+        padding: 15px 0 !important;
+    }
     .truth .flex .col a svg { 
         width: 20px;
     }
