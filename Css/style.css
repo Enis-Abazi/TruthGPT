@@ -11,6 +11,7 @@ html , body {
     box-sizing: border-box;
    
 }
+
 a { 
     text-decoration: none;
 }
@@ -974,6 +975,23 @@ header .logo a img {
     width: 100%;
     height: 200vh;
 }
+.roadmap .particles { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.roadmap .particles video { 
+    opacity: .1;
+    z-index: 1;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 .roadmap .svg-top { 
     position: absolute;
     top: 0;
@@ -1812,7 +1830,7 @@ footer .center-footer colored-span {
         width: 100%;
     }
     .chatbot .svg-top svg { 
-        width: 100%;
+        width: 130%;
     }
     .chatbot .row { 
         flex-direction: column;
@@ -1903,10 +1921,10 @@ footer .center-footer colored-span {
     .roadmap .row { 
         flex-direction: column;
         row-gap: 20px;
-        padding: 50px 2px;
+        padding: 50px 0;
     }
     .roadmap .row .col-colored { 
-        margin: 0 0 0 50px;
+        margin: 0 0 0 30px;
     }
     .roadmap .row .col-before::before { 
         left: -160px;
@@ -2328,7 +2346,8 @@ footer .center-footer colored-span {
         top: 50px;
     }
     .tokenomics .svg-top { 
-        top: -241px;
+        top: -420px;
+        width: 1400px;
     }
     .tokenomics .straight-line { 
         padding: 30px;
@@ -2340,7 +2359,8 @@ footer .center-footer colored-span {
         padding: 100px 0;
     }
     .team .svg-top { 
-        top: -240px;
+        top: -415px;
+        width: 1400px;
     }
     .tokenomics .row .col .header4 .edit-circle { 
         left: 0;
@@ -2368,11 +2388,11 @@ footer .center-footer colored-span {
         overflow: hidden;
     }
     .team .row .col .content h3::before { 
-        bottom: -68px;
+        bottom: -113px;
         width: 500px;
     }
     .team .row .col .content .geomteric-h::before { 
-        bottom: -68px;
+        bottom: -113px;
     }
     .team .social-flex { 
         padding: 10px 50px;
@@ -2389,6 +2409,137 @@ footer .center-footer colored-span {
         display: flex;
         justify-content: center;
     }
+    
+}
+@media only screen and (min-width:1025px) and (max-width:1240px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    .front .svg-waves { 
+        left: 0;
+    }
+    .truth .row { 
+        padding: 100px;
+    }
+    .earn .row .col .content h4 { 
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+    }
+    .earn .row .col .content { 
+        width: 250px;
+        max-width: 250px;
+    }
+    .invest .row { 
+        padding: 125px;
+    } 
+    .invest .row .col-30 { 
+        right: 0;
+    }
+    .roadmap .row { 
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 50px 2px;
+    }
+    .roadmap .row .col-colored { 
+        margin: 0 0 0 50px;
+    }
+    .roadmap .row .col-before::before { 
+        left: -160px;
+        top: -205px;
+    }
+    .roadmap .row .col .svg-modified { 
+        top: -240px;
+        left: -177px;
+    }
+    .roadmap .row .col-before-right::before { 
+        left: -160px !important;
+        top: -55px !important;
+    }
+    .roadmap .row .col .svg-modified-right {
+        left: -178px !important;
+        top: 50px;
+    }
+    .tokenomics .svg-top { 
+        top: -420px;
+        width: 1400px;
+    }
+    .team .svg-top { 
+        top: -420px;
+        width: 1400px;
+    }
+    .tokenomics .row { 
+        justify-content: start;
+        align-items: start;
+        right: 40px;
+    }
+    .team .row { 
+        padding: 30px;
+    }
+    .team .row .col { 
+        overflow: hidden;
+        height: 100%;
+    }
+    .team .row .col .content h3::before  , .team .row .col .content .geomteric-h::before{ 
+        bottom: -48px;
+        width: 500px;
+    }
+
+}
+@media only screen and (min-width:1241px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    .earn .svg-bottom { 
+        bottom: 1%;
+    }
+    .roadmap .row { 
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 50px 2px;
+    }
+    .roadmap .row .col-colored { 
+        margin: 0 0 0 50px;
+    }
+    .roadmap .row .col-before::before { 
+        left: -160px;
+        top: -205px;
+    }
+    .roadmap .row .col .svg-modified { 
+        top: -240px;
+        left: -177px;
+    }
+    .roadmap .row .col-before-right::before { 
+        left: -160px !important;
+        top: -55px !important;
+    }
+    .roadmap .row .col .svg-modified-right {
+        left: -178px !important;
+        top: 50px;
+    }
+    .tokenomics .svg-top { 
+        width: 1400px;
+        top: -420px;
+    }
+    .team .svg-top { 
+        width: 1400px;
+    }
+    .team .row .col { 
+        overflow: hidden;
+        height: 100%;
+    }
+    .team .row .col .content h3::before  , .team .row .col .content .geomteric-h::before{ 
+        bottom: -48px;
+        width: 500px;
+    }
 }
 @keyframes changeColor {
     0% { 
@@ -2397,43 +2548,43 @@ footer .center-footer colored-span {
     }
     10% { 
         background: rgb(0,212,255);
-background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(2,0,36,1) 49%, rgba(227,37,181,1) 98%);
+        background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(2,0,36,1) 49%, rgba(227,37,181,1) 98%);
     }
     20% { 
-background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+        background: rgb(34,193,195);
+        background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     }
     30% { 
         background: rgb(63,94,251);
-background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+        background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     }
     40% { 
         background: rgb(131,58,180);
-background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     }
     50% { 
         background: rgb(238,174,202);
-background-color: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        background-color: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     }
     60% { 
         background: rgb(135,68,97);
-background: radial-gradient(circle, rgba(135,68,97,1) 7%, rgba(0,27,59,1) 100%);
+        background: radial-gradient(circle, rgba(135,68,97,1) 7%, rgba(0,27,59,1) 100%);
     }
     70% { 
         background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,65,1) 100%);
+        background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,65,1) 100%);
     }
     80% { 
         background: rgb(0,212,255);
-background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(255,127,194,1) 28%, rgba(227,37,181,1) 98%);
+        background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(255,127,194,1) 28%, rgba(227,37,181,1) 98%);
     }
     90% { 
         background: rgb(131,58,180);
-background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(194,138,203,0.5970763305322129) 50%, rgba(252,176,69,1) 100%);
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(194,138,203,0.5970763305322129) 50%, rgba(252,176,69,1) 100%);
     }
     100% { 
         background: rgb(255,107,171);
-background: radial-gradient(circle, rgba(255,107,171,1) 1%, rgba(159,120,86,1) 38%, rgba(207,224,65,1) 100%);
+        background: radial-gradient(circle, rgba(255,107,171,1) 1%, rgba(159,120,86,1) 38%, rgba(207,224,65,1) 100%);
     }
 }
 @keyframes changeLine {
